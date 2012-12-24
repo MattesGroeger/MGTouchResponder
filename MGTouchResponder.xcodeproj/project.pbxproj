@@ -149,9 +149,8 @@
 		AD9AEF391688B5C200B3E7C3 /* MGTouchResponder */ = {
 			isa = PBXGroup;
 			children = (
-				AD9AEF3C1688B5C200B3E7C3 /* MGTouchResponder.h */,
-				AD9AEF3E1688B5C200B3E7C3 /* MGTouchResponder.m */,
 				AD9AEF3A1688B5C200B3E7C3 /* Supporting Files */,
+				BF8D9C014CFC4A6E51AA254A /* Classes */,
 			);
 			path = MGTouchResponder;
 			sourceTree = "<group>";
@@ -167,9 +166,8 @@
 		AD9AEF4E1688B5C200B3E7C3 /* MGTouchResponderTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD9AEF541688B5C200B3E7C3 /* MGTouchResponderTests.h */,
-				AD9AEF551688B5C200B3E7C3 /* MGTouchResponderTests.m */,
 				AD9AEF4F1688B5C200B3E7C3 /* Supporting Files */,
+				BF8D97A678E112938EF0C623 /* Classes */,
 			);
 			path = MGTouchResponderTests;
 			sourceTree = "<group>";
@@ -186,12 +184,9 @@
 		AD9AEF691688B5F200B3E7C3 /* MGTouchResponderExample */ = {
 			isa = PBXGroup;
 			children = (
-				AD9AEF721688B5F200B3E7C3 /* AppDelegate.h */,
-				AD9AEF731688B5F200B3E7C3 /* AppDelegate.m */,
-				AD9AEF7B1688B5F200B3E7C3 /* ViewController.h */,
-				AD9AEF7C1688B5F200B3E7C3 /* ViewController.m */,
 				AD9AEF7E1688B5F200B3E7C3 /* ViewController.xib */,
 				AD9AEF6A1688B5F200B3E7C3 /* Supporting Files */,
+				BF8D9BA3ABB0F3EE9DAFC3B9 /* Classes */,
 			);
 			path = MGTouchResponderExample;
 			sourceTree = "<group>";
@@ -208,6 +203,35 @@
 				AD9AEF791688B5F200B3E7C3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8D97A678E112938EF0C623 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AEF541688B5C200B3E7C3 /* MGTouchResponderTests.h */,
+				AD9AEF551688B5C200B3E7C3 /* MGTouchResponderTests.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF8D9BA3ABB0F3EE9DAFC3B9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AEF721688B5F200B3E7C3 /* AppDelegate.h */,
+				AD9AEF731688B5F200B3E7C3 /* AppDelegate.m */,
+				AD9AEF7B1688B5F200B3E7C3 /* ViewController.h */,
+				AD9AEF7C1688B5F200B3E7C3 /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF8D9C014CFC4A6E51AA254A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD9AEF3C1688B5C200B3E7C3 /* MGTouchResponder.h */,
+				AD9AEF3E1688B5C200B3E7C3 /* MGTouchResponder.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
