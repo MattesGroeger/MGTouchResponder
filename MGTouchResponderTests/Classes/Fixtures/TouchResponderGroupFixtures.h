@@ -20,22 +20,28 @@
  * THE SOFTWARE.
  */
 
-#import "CCTouchDelegateProtocol.h"
+#import "MGTouchResponderGroup.h"
 
-@protocol TouchResponderCallback;
+static NSUInteger CALL_COUNT = 0;
 
-@protocol MGTouchResponder
+@interface ResponderIgnoreOnEnded : NSObject <MGTouchResponder>
+{
+@private
+	NSUInteger _callIndex;
+	id <TouchResponderCallback> _touchResponderCallback;
+}
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback;
+@property (nonatomic, assign) NSUInteger callIndex;
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event;
+@end
 
-@optional
+@interface ResponderIgnoreOnBegin : NSObject <MGTouchResponder>
+{
+@private
+	id <TouchResponderCallback> _touchResponderCallback;
+}
+@end
 
-- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event;
-
-- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event;
-
-- (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event;
+@interface ResponderMinimal : NSObject <MGTouchResponder>
 
 @end

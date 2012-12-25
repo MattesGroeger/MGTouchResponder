@@ -20,22 +20,58 @@
  * THE SOFTWARE.
  */
 
-#import "CCTouchDelegateProtocol.h"
+#import "MGTouchResponderGroup.h"
+#import "MGTouchResponder.h"
+#import "TouchResponderGroupFixtures.h"
 
-@protocol TouchResponderCallback;
+@implementation ResponderIgnoreOnEnded
+@synthesize callIndex = _callIndex;
 
-@protocol MGTouchResponder
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback;
+- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+{
+	_touchResponderCallback = callback;
+}
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event;
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	_callIndex = CALL_COUNT++;
+}
 
-@optional
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	[_touchResponderCallback touchIgnored:self];
+}
 
-- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event;
+@end
 
-- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event;
+@implementation ResponderIgnoreOnBegin
 
-- (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event;
+- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+{
+	_touchResponderCallback = callback;
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	[_touchResponderCallback touchIgnored:self];
+}
+
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	// ignore
+}
+
+@end
+
+@implementation ResponderMinimal
+
+- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+{
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+}
 
 @end
