@@ -75,3 +75,18 @@
 }
 
 @end
+
+@implementation ResponderSetDataAndIgnore
+
+- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+{
+	_touchResponderCallback = callback;
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	_touchResponderCallback.userInfo[@"foo"] = @"bar";
+	[_touchResponderCallback touchIgnored:self];
+}
+
+@end

@@ -65,8 +65,6 @@
 
 @implementation MGTouchResponderGroup
 
-@synthesize touchedObject = _touchedObject;
-
 - (id)initWithPriority:(int)priority
 {
 	self = [super init];
@@ -80,6 +78,7 @@
 		_responders = [NSMutableArray array];
 		_currentResponderIndex = 0;
 		_currentTouches = [NSMutableArray array];
+		_userInfo = [NSMutableDictionary dictionary];
 	}
 
 	return self;
@@ -268,7 +267,7 @@
 
 - (BOOL)hasActiveTouches
 {
-	return _currentTouches > 0;
+	return _currentTouches.count > 0;
 }
 
 - (BOOL)isProcessingTheTouch:(UITouch *)touch
@@ -307,16 +306,16 @@
 
 	if ([_currentTouches count] == 0)
 	{
+		[_userInfo removeAllObjects];
 		_currentResponderIndex = 0;
-		_touchedObject = nil;
 	}
 }
 
 - (void)finishAllTouches
 {
+	[_userInfo removeAllObjects];
 	[_currentTouches removeAllObjects];
 	_currentResponderIndex = 0;
-	_touchedObject = nil;
 }
 
 @end

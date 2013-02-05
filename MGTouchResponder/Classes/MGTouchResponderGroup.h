@@ -27,10 +27,22 @@
 
 @protocol TouchResponderCallback
 
-@property (nonatomic, strong) id touchedObject;
+/**
+* Store any data you want to pass from one responder to the next one in this
+* dictionary. It will be cleared for the next touch interaction.
+*/
+@property (nonatomic, strong, readonly) NSMutableDictionary *userInfo;
 
+/**
+* Call this if the responder doesn't care about the touches. All touches will
+* be delegated and replayed on the next TouchResponder.
+*/
 - (void)touchIgnored:(id <MGTouchResponder>)originator;
 
+/**
+* Call this if the responder used/consumed the touches. Further delegation is
+* not necessary. All following responders will never know about the touches.
+*/
 - (void)touchConsumed:(id <MGTouchResponder>)originator;
 
 @end
@@ -69,8 +81,9 @@
 	NSMutableArray *_responders;
 	NSUInteger _currentResponderIndex;
 	NSMutableArray *_currentTouches;
-	id _touchedObject;
 }
+
+@property (nonatomic, strong, readonly) NSMutableDictionary *userInfo;
 
 - (id)initWithPriority:(int)priority;
 

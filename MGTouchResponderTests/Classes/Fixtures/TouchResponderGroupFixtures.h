@@ -45,3 +45,11 @@ static NSUInteger CALL_COUNT = 0;
 @interface ResponderMinimal : NSObject <MGTouchResponder>
 
 @end
+
+@interface ResponderSetDataAndIgnore : NSObject <MGTouchResponder>
+{
+@private
+	id <TouchResponderCallback> _touchResponderCallback;
+}
+
+@end

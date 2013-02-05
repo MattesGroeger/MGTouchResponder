@@ -23,6 +23,7 @@
 #import "Kiwi.h"
 #import "MGTouchResponder.h"
 #import "TouchResponderGroupFixtures.h"
+#import "KWHaveMatcher.h"
 
 SPEC_BEGIN(MGTouchResponderGroupSpec)
 
@@ -128,6 +129,35 @@ describe(@"MGTouchResponderGroup", ^
 			[touchResponderGroup ccTouchMoved:touch2 withEvent:event2]; // swallowed by responder1
 			[touchResponderGroup ccTouchCancelled:touch2 withEvent:event2]; // swallowed by responder1
 			[touchResponderGroup ccTouchEnded:touch withEvent:event]; // calls ignored here! Next responder..
+		});
+	});
+
+	context(@"with first responder that sets data and then ignores touch", ^
+	{
+		__block ResponderSetDataAndIgnore *responder1 = [[ResponderSetDataAndIgnore alloc] init];
+		__block id responder2 = [KWMock mockForProtocol:@protocol(MGTouchResponder)];
+
+		beforeEach(^
+		{
+			touchResponderGroup = [[MGTouchResponderGroup alloc] init];
+
+			[[responder2 should] receive:@selector(setTouchResponderCallback:) withArguments:touchResponderGroup];
+
+			[touchResponderGroup addResponder:responder1 withPriority:0];
+			[touchResponderGroup addResponder:responder2 withPriority:1];
+		});
+
+		it(@"should replay touchBegan on second responder", ^
+		{
+			[[responder2 should] receive:@selector(touchBegan:withEvent:) withArguments:touch,event];
+
+			// check if data was set:
+			[touchResponderGroup ccTouchBegan:touch withEvent:event];
+			[[touchResponderGroup.userInfo[@"foo"] should] equal:@"bar"];
+
+			// clear the userInfo when done:
+			[touchResponderGroup touchConsumed:responder2];
+			[[[touchResponderGroup.userInfo allKeys] should] haveCountOf:0];
 		});
 	});
 
