@@ -1,634 +1,1505 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		AD62A73C1689B3810015C0A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */; };
-		AD62A76D1689ED9E0015C0A5 /* MGTouchResponderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */; };
-		AD9AEF381688B5C200B3E7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF371688B5C200B3E7C3 /* Foundation.framework */; };
-		AD9AEF471688B5C200B3E7C3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF461688B5C200B3E7C3 /* SenTestingKit.framework */; };
-		AD9AEF491688B5C200B3E7C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF481688B5C200B3E7C3 /* UIKit.framework */; };
-		AD9AEF4A1688B5C200B3E7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF371688B5C200B3E7C3 /* Foundation.framework */; };
-		AD9AEF531688B5C200B3E7C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF511688B5C200B3E7C3 /* InfoPlist.strings */; };
-		AD9AEF651688B5F200B3E7C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF481688B5C200B3E7C3 /* UIKit.framework */; };
-		AD9AEF661688B5F200B3E7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF371688B5C200B3E7C3 /* Foundation.framework */; };
-		AD9AEF681688B5F200B3E7C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */; };
-		AD9AEF6E1688B5F200B3E7C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF6C1688B5F200B3E7C3 /* InfoPlist.strings */; };
-		AD9AEF701688B5F200B3E7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9AEF6F1688B5F200B3E7C3 /* main.m */; };
-		AD9AEF741688B5F200B3E7C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9AEF731688B5F200B3E7C3 /* AppDelegate.m */; };
-		AD9AEF761688B5F200B3E7C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF751688B5F200B3E7C3 /* Default.png */; };
-		AD9AEF781688B5F200B3E7C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF771688B5F200B3E7C3 /* Default@2x.png */; };
-		AD9AEF7A1688B5F200B3E7C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF791688B5F200B3E7C3 /* Default-568h@2x.png */; };
-		AD9AEF7D1688B5F200B3E7C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9AEF7C1688B5F200B3E7C3 /* ViewController.m */; };
-		AD9AEF801688B5F200B3E7C3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9AEF7E1688B5F200B3E7C3 /* ViewController.xib */; };
-		BF8D9255E54F567331E9F1A7 /* TouchResponderGroupFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D971595A6DCEC960C3A43 /* TouchResponderGroupFixtures.m */; };
-		BF8D96E13002D592FE713AFC /* MGTouchResponderGroupSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D9A89C01CB5FB8637FE88 /* MGTouchResponderGroupSpec.m */; };
-		BF8D9742D45395C7417CC20C /* MGTouchResponderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */; };
-		BF8D9DF708CDFDD4E91090A0 /* MGTouchResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D966307279254DFAF6061 /* MGTouchResponder.h */; };
-		BF8D9F12F42B893249CAE227 /* MGTouchResponderGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD9AEFAB1688B9F300B3E7C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD9AEF2B1688B5C100B3E7C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD9AEF331688B5C100B3E7C3;
-			remoteInfo = MGTouchResponder;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AD9AEF321688B5C100B3E7C3 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				BF8D9F12F42B893249CAE227 /* MGTouchResponderGroup.h in CopyFiles */,
-				BF8D9DF708CDFDD4E91090A0 /* MGTouchResponder.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		AD9AEF341688B5C200B3E7C3 /* libMGTouchResponder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGTouchResponder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9AEF371688B5C200B3E7C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AD9AEF3B1688B5C200B3E7C3 /* MGTouchResponder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGTouchResponder-Prefix.pch"; sourceTree = "<group>"; };
-		AD9AEF451688B5C200B3E7C3 /* MGTouchResponderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGTouchResponderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9AEF461688B5C200B3E7C3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AD9AEF481688B5C200B3E7C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		AD9AEF501688B5C200B3E7C3 /* MGTouchResponderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGTouchResponderTests-Info.plist"; sourceTree = "<group>"; };
-		AD9AEF521688B5C200B3E7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD9AEF631688B5F200B3E7C3 /* MGTouchResponderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGTouchResponderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AD9AEF6B1688B5F200B3E7C3 /* MGTouchResponderExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGTouchResponderExample-Info.plist"; sourceTree = "<group>"; };
-		AD9AEF6D1688B5F200B3E7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD9AEF6F1688B5F200B3E7C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AD9AEF711688B5F200B3E7C3 /* MGTouchResponderExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGTouchResponderExample-Prefix.pch"; sourceTree = "<group>"; };
-		AD9AEF721688B5F200B3E7C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AD9AEF731688B5F200B3E7C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AD9AEF751688B5F200B3E7C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		AD9AEF771688B5F200B3E7C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		AD9AEF791688B5F200B3E7C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AD9AEF7B1688B5F200B3E7C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AD9AEF7C1688B5F200B3E7C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AD9AEF7F1688B5F200B3E7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		BF8D911F11AC3DCFE84C2E66 /* TouchResponderGroupFixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchResponderGroupFixtures.h; sourceTree = "<group>"; };
-		BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTouchResponderGroup.h; sourceTree = "<group>"; };
-		BF8D966307279254DFAF6061 /* MGTouchResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTouchResponder.h; sourceTree = "<group>"; };
-		BF8D971595A6DCEC960C3A43 /* TouchResponderGroupFixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchResponderGroupFixtures.m; sourceTree = "<group>"; };
-		BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTouchResponderGroup.m; sourceTree = "<group>"; };
-		BF8D9A89C01CB5FB8637FE88 /* MGTouchResponderGroupSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTouchResponderGroupSpec.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		AD9AEF311688B5C100B3E7C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9AEF381688B5C200B3E7C3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9AEF411688B5C200B3E7C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD62A73C1689B3810015C0A5 /* CoreGraphics.framework in Frameworks */,
-				AD9AEF471688B5C200B3E7C3 /* SenTestingKit.framework in Frameworks */,
-				AD9AEF491688B5C200B3E7C3 /* UIKit.framework in Frameworks */,
-				AD9AEF4A1688B5C200B3E7C3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9AEF601688B5F200B3E7C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9AEF651688B5F200B3E7C3 /* UIKit.framework in Frameworks */,
-				AD9AEF661688B5F200B3E7C3 /* Foundation.framework in Frameworks */,
-				AD9AEF681688B5F200B3E7C3 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		AD9AEF291688B5C100B3E7C3 = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF391688B5C200B3E7C3 /* MGTouchResponder */,
-				AD9AEF4E1688B5C200B3E7C3 /* MGTouchResponderTests */,
-				AD9AEF691688B5F200B3E7C3 /* MGTouchResponderExample */,
-				AD9AEF361688B5C200B3E7C3 /* Frameworks */,
-				AD9AEF351688B5C200B3E7C3 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		AD9AEF351688B5C200B3E7C3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF341688B5C200B3E7C3 /* libMGTouchResponder.a */,
-				AD9AEF451688B5C200B3E7C3 /* MGTouchResponderTests.octest */,
-				AD9AEF631688B5F200B3E7C3 /* MGTouchResponderExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AD9AEF361688B5C200B3E7C3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF371688B5C200B3E7C3 /* Foundation.framework */,
-				AD9AEF461688B5C200B3E7C3 /* SenTestingKit.framework */,
-				AD9AEF481688B5C200B3E7C3 /* UIKit.framework */,
-				AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AD9AEF391688B5C200B3E7C3 /* MGTouchResponder */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF3A1688B5C200B3E7C3 /* Supporting Files */,
-				BF8D9C014CFC4A6E51AA254A /* Classes */,
-			);
-			path = MGTouchResponder;
-			sourceTree = "<group>";
-		};
-		AD9AEF3A1688B5C200B3E7C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF3B1688B5C200B3E7C3 /* MGTouchResponder-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD9AEF4E1688B5C200B3E7C3 /* MGTouchResponderTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF4F1688B5C200B3E7C3 /* Supporting Files */,
-				BF8D97A678E112938EF0C623 /* Classes */,
-			);
-			path = MGTouchResponderTests;
-			sourceTree = "<group>";
-		};
-		AD9AEF4F1688B5C200B3E7C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF501688B5C200B3E7C3 /* MGTouchResponderTests-Info.plist */,
-				AD9AEF511688B5C200B3E7C3 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD9AEF691688B5F200B3E7C3 /* MGTouchResponderExample */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF7E1688B5F200B3E7C3 /* ViewController.xib */,
-				AD9AEF6A1688B5F200B3E7C3 /* Supporting Files */,
-				BF8D9BA3ABB0F3EE9DAFC3B9 /* Classes */,
-			);
-			path = MGTouchResponderExample;
-			sourceTree = "<group>";
-		};
-		AD9AEF6A1688B5F200B3E7C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF6B1688B5F200B3E7C3 /* MGTouchResponderExample-Info.plist */,
-				AD9AEF6C1688B5F200B3E7C3 /* InfoPlist.strings */,
-				AD9AEF6F1688B5F200B3E7C3 /* main.m */,
-				AD9AEF711688B5F200B3E7C3 /* MGTouchResponderExample-Prefix.pch */,
-				AD9AEF751688B5F200B3E7C3 /* Default.png */,
-				AD9AEF771688B5F200B3E7C3 /* Default@2x.png */,
-				AD9AEF791688B5F200B3E7C3 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BF8D90EFF5E29C7F12975E82 /* Fixtures */ = {
-			isa = PBXGroup;
-			children = (
-				BF8D911F11AC3DCFE84C2E66 /* TouchResponderGroupFixtures.h */,
-				BF8D971595A6DCEC960C3A43 /* TouchResponderGroupFixtures.m */,
-			);
-			path = Fixtures;
-			sourceTree = "<group>";
-		};
-		BF8D97A678E112938EF0C623 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BF8D9A89C01CB5FB8637FE88 /* MGTouchResponderGroupSpec.m */,
-				BF8D90EFF5E29C7F12975E82 /* Fixtures */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BF8D9BA3ABB0F3EE9DAFC3B9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				AD9AEF721688B5F200B3E7C3 /* AppDelegate.h */,
-				AD9AEF731688B5F200B3E7C3 /* AppDelegate.m */,
-				AD9AEF7B1688B5F200B3E7C3 /* ViewController.h */,
-				AD9AEF7C1688B5F200B3E7C3 /* ViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BF8D9C014CFC4A6E51AA254A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */,
-				BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */,
-				BF8D966307279254DFAF6061 /* MGTouchResponder.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		AD9AEF331688B5C100B3E7C3 /* MGTouchResponder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9AEF591688B5C200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponder" */;
-			buildPhases = (
-				AD9AEF301688B5C100B3E7C3 /* Sources */,
-				AD9AEF311688B5C100B3E7C3 /* Frameworks */,
-				AD9AEF321688B5C100B3E7C3 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MGTouchResponder;
-			productName = MGTouchResponder;
-			productReference = AD9AEF341688B5C200B3E7C3 /* libMGTouchResponder.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AD9AEF441688B5C200B3E7C3 /* MGTouchResponderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9AEF5C1688B5C200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponderTests" */;
-			buildPhases = (
-				AD9AEF401688B5C200B3E7C3 /* Sources */,
-				AD9AEF411688B5C200B3E7C3 /* Frameworks */,
-				AD9AEF421688B5C200B3E7C3 /* Resources */,
-				AD9AEF431688B5C200B3E7C3 /* ShellScript */,
-				DEEAB8DFF0D84AEC9F9967E1 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MGTouchResponderTests;
-			productName = MGTouchResponderTests;
-			productReference = AD9AEF451688B5C200B3E7C3 /* MGTouchResponderTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		AD9AEF621688B5F200B3E7C3 /* MGTouchResponderExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9AEF811688B5F200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponderExample" */;
-			buildPhases = (
-				AD9AEF5F1688B5F200B3E7C3 /* Sources */,
-				AD9AEF601688B5F200B3E7C3 /* Frameworks */,
-				AD9AEF611688B5F200B3E7C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD9AEFAC1688B9F300B3E7C3 /* PBXTargetDependency */,
-			);
-			name = MGTouchResponderExample;
-			productName = MGTouchResponderExample;
-			productReference = AD9AEF631688B5F200B3E7C3 /* MGTouchResponderExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		AD9AEF2B1688B5C100B3E7C3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Mattes Groeger";
-			};
-			buildConfigurationList = AD9AEF2E1688B5C100B3E7C3 /* Build configuration list for PBXProject "MGTouchResponder" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = AD9AEF291688B5C100B3E7C3;
-			productRefGroup = AD9AEF351688B5C200B3E7C3 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				AD9AEF331688B5C100B3E7C3 /* MGTouchResponder */,
-				AD9AEF441688B5C200B3E7C3 /* MGTouchResponderTests */,
-				AD9AEF621688B5F200B3E7C3 /* MGTouchResponderExample */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		AD9AEF421688B5C200B3E7C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9AEF531688B5C200B3E7C3 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9AEF611688B5F200B3E7C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9AEF6E1688B5F200B3E7C3 /* InfoPlist.strings in Resources */,
-				AD9AEF761688B5F200B3E7C3 /* Default.png in Resources */,
-				AD9AEF781688B5F200B3E7C3 /* Default@2x.png in Resources */,
-				AD9AEF7A1688B5F200B3E7C3 /* Default-568h@2x.png in Resources */,
-				AD9AEF801688B5F200B3E7C3 /* ViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AD9AEF431688B5C200B3E7C3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		DEEAB8DFF0D84AEC9F9967E1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MGTouchResponderTests-resources.sh\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		AD9AEF301688B5C100B3E7C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF8D9742D45395C7417CC20C /* MGTouchResponderGroup.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9AEF401688B5C200B3E7C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD62A76D1689ED9E0015C0A5 /* MGTouchResponderGroup.m in Sources */,
-				BF8D96E13002D592FE713AFC /* MGTouchResponderGroupSpec.m in Sources */,
-				BF8D9255E54F567331E9F1A7 /* TouchResponderGroupFixtures.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9AEF5F1688B5F200B3E7C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9AEF701688B5F200B3E7C3 /* main.m in Sources */,
-				AD9AEF741688B5F200B3E7C3 /* AppDelegate.m in Sources */,
-				AD9AEF7D1688B5F200B3E7C3 /* ViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD9AEFAC1688B9F300B3E7C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD9AEF331688B5C100B3E7C3 /* MGTouchResponder */;
-			targetProxy = AD9AEFAB1688B9F300B3E7C3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AD9AEF511688B5C200B3E7C3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD9AEF521688B5C200B3E7C3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AD9AEF6C1688B5F200B3E7C3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD9AEF6D1688B5F200B3E7C3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AD9AEF7E1688B5F200B3E7C3 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD9AEF7F1688B5F200B3E7C3 /* en */,
-			);
-			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		AD9AEF571688B5C200B3E7C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		AD9AEF581688B5C200B3E7C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD9AEF5A1688B5C200B3E7C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/MGTouchResponder.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AD9AEF5B1688B5C200B3E7C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/MGTouchResponder.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		AD9AEF5D1688B5C200B3E7C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
-				INFOPLIST_FILE = "MGTouchResponderTests/MGTouchResponderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		AD9AEF5E1688B5C200B3E7C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
-				INFOPLIST_FILE = "MGTouchResponderTests/MGTouchResponderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		AD9AEF821688B5F200B3E7C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponderExample/MGTouchResponderExample-Prefix.pch";
-				INFOPLIST_FILE = "MGTouchResponderExample/MGTouchResponderExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		AD9AEF831688B5F200B3E7C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MGTouchResponderExample/MGTouchResponderExample-Prefix.pch";
-				INFOPLIST_FILE = "MGTouchResponderExample/MGTouchResponderExample-Info.plist";
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		AD9AEF2E1688B5C100B3E7C3 /* Build configuration list for PBXProject "MGTouchResponder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9AEF571688B5C200B3E7C3 /* Debug */,
-				AD9AEF581688B5C200B3E7C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD9AEF591688B5C200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9AEF5A1688B5C200B3E7C3 /* Debug */,
-				AD9AEF5B1688B5C200B3E7C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD9AEF5C1688B5C200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9AEF5D1688B5C200B3E7C3 /* Debug */,
-				AD9AEF5E1688B5C200B3E7C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD9AEF811688B5F200B3E7C3 /* Build configuration list for PBXNativeTarget "MGTouchResponderExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9AEF821688B5F200B3E7C3 /* Debug */,
-				AD9AEF831688B5F200B3E7C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = AD9AEF2B1688B5C100B3E7C3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>09A5895086254506A3D7301A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MGTouchResponderTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-MGTouchResponderTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1C9F93ED754B4A3F85A54F7F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F46AB264D53549AB98762A56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>84A3BC57463E444F9E88D1FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84EE0939AFCA4E3FA219FAE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>84EE0939AFCA4E3FA219FAE2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-MGTouchResponderTests.a</string>
+			<key>path</key>
+			<string>libPods-MGTouchResponderTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942112858C1B403B86C8E48A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>968BDBD3475744ABA0BE0B9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-MGTouchResponderTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>AD62A73C1689B3810015C0A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF671688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD62A76D1689ED9E0015C0A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D983CC7353311B885B6D5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF291688B5C100B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF391688B5C200B3E7C3</string>
+				<string>AD9AEF4E1688B5C200B3E7C3</string>
+				<string>AD9AEF691688B5F200B3E7C3</string>
+				<string>AD9AEF361688B5C200B3E7C3</string>
+				<string>AD9AEF351688B5C200B3E7C3</string>
+				<string>942112858C1B403B86C8E48A</string>
+				<string>09A5895086254506A3D7301A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF2B1688B5C100B3E7C3</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Mattes Groeger</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>AD9AEF2E1688B5C100B3E7C3</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>AD9AEF291688B5C100B3E7C3</string>
+			<key>productRefGroup</key>
+			<string>AD9AEF351688B5C200B3E7C3</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>AD9AEF331688B5C100B3E7C3</string>
+				<string>AD9AEF441688B5C200B3E7C3</string>
+				<string>AD9AEF621688B5F200B3E7C3</string>
+			</array>
+		</dict>
+		<key>AD9AEF2E1688B5C100B3E7C3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD9AEF571688B5C200B3E7C3</string>
+				<string>AD9AEF581688B5C200B3E7C3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD9AEF301688B5C100B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BF8D9742D45395C7417CC20C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF311688B5C100B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD9AEF381688B5C200B3E7C3</string>
+				<string>1C9F93ED754B4A3F85A54F7F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF321688B5C100B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/${PRODUCT_NAME}</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array>
+				<string>BF8D9F12F42B893249CAE227</string>
+				<string>BF8D9DF708CDFDD4E91090A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF331688B5C100B3E7C3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>AD9AEF591688B5C200B3E7C3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AD9AEF301688B5C100B3E7C3</string>
+				<string>AD9AEF311688B5C100B3E7C3</string>
+				<string>AD9AEF321688B5C100B3E7C3</string>
+				<string>B22F5D8FE85C4AD8B50889E4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MGTouchResponder</string>
+			<key>productName</key>
+			<string>MGTouchResponder</string>
+			<key>productReference</key>
+			<string>AD9AEF341688B5C200B3E7C3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AD9AEF341688B5C200B3E7C3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libMGTouchResponder.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD9AEF351688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF341688B5C200B3E7C3</string>
+				<string>AD9AEF451688B5C200B3E7C3</string>
+				<string>AD9AEF631688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF361688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF371688B5C200B3E7C3</string>
+				<string>AD9AEF461688B5C200B3E7C3</string>
+				<string>AD9AEF481688B5C200B3E7C3</string>
+				<string>AD9AEF671688B5F200B3E7C3</string>
+				<string>F46AB264D53549AB98762A56</string>
+				<string>84EE0939AFCA4E3FA219FAE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF371688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>AD9AEF381688B5C200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF371688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF391688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF3A1688B5C200B3E7C3</string>
+				<string>BF8D9C014CFC4A6E51AA254A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MGTouchResponder</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF3A1688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF3B1688B5C200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF3B1688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MGTouchResponder-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF401688B5C200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD62A76D1689ED9E0015C0A5</string>
+				<string>BF8D96E13002D592FE713AFC</string>
+				<string>BF8D9255E54F567331E9F1A7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF411688B5C200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD62A73C1689B3810015C0A5</string>
+				<string>AD9AEF471688B5C200B3E7C3</string>
+				<string>AD9AEF491688B5C200B3E7C3</string>
+				<string>AD9AEF4A1688B5C200B3E7C3</string>
+				<string>84A3BC57463E444F9E88D1FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF421688B5C200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD9AEF531688B5C200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF431688B5C200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>AD9AEF441688B5C200B3E7C3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>AD9AEF5C1688B5C200B3E7C3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AD9AEF401688B5C200B3E7C3</string>
+				<string>AD9AEF411688B5C200B3E7C3</string>
+				<string>AD9AEF421688B5C200B3E7C3</string>
+				<string>AD9AEF431688B5C200B3E7C3</string>
+				<string>DEEAB8DFF0D84AEC9F9967E1</string>
+				<string>968BDBD3475744ABA0BE0B9A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MGTouchResponderTests</string>
+			<key>productName</key>
+			<string>MGTouchResponderTests</string>
+			<key>productReference</key>
+			<string>AD9AEF451688B5C200B3E7C3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>AD9AEF451688B5C200B3E7C3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MGTouchResponderTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD9AEF461688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>AD9AEF471688B5C200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF461688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF481688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>AD9AEF491688B5C200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF481688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF4A1688B5C200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF371688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF4E1688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF4F1688B5C200B3E7C3</string>
+				<string>BF8D97A678E112938EF0C623</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MGTouchResponderTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF4F1688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF501688B5C200B3E7C3</string>
+				<string>AD9AEF511688B5C200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF501688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>MGTouchResponderTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF511688B5C200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF521688B5C200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF521688B5C200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF531688B5C200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF511688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF571688B5C200B3E7C3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD9AEF581688B5C200B3E7C3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD9AEF591688B5C200B3E7C3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD9AEF5A1688B5C200B3E7C3</string>
+				<string>AD9AEF5B1688B5C200B3E7C3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD9AEF5A1688B5C200B3E7C3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>942112858C1B403B86C8E48A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MGTouchResponder.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponder/MGTouchResponder-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD9AEF5B1688B5C200B3E7C3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>942112858C1B403B86C8E48A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MGTouchResponder.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponder/MGTouchResponder-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD9AEF5C1688B5C200B3E7C3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD9AEF5D1688B5C200B3E7C3</string>
+				<string>AD9AEF5E1688B5C200B3E7C3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD9AEF5D1688B5C200B3E7C3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>09A5895086254506A3D7301A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponder/MGTouchResponder-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MGTouchResponderTests/MGTouchResponderTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD9AEF5E1688B5C200B3E7C3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>09A5895086254506A3D7301A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponder/MGTouchResponder-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MGTouchResponderTests/MGTouchResponderTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD9AEF5F1688B5F200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD9AEF701688B5F200B3E7C3</string>
+				<string>AD9AEF741688B5F200B3E7C3</string>
+				<string>AD9AEF7D1688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF601688B5F200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD9AEF651688B5F200B3E7C3</string>
+				<string>AD9AEF661688B5F200B3E7C3</string>
+				<string>AD9AEF681688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF611688B5F200B3E7C3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD9AEF6E1688B5F200B3E7C3</string>
+				<string>AD9AEF761688B5F200B3E7C3</string>
+				<string>AD9AEF781688B5F200B3E7C3</string>
+				<string>AD9AEF7A1688B5F200B3E7C3</string>
+				<string>AD9AEF801688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD9AEF621688B5F200B3E7C3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>AD9AEF811688B5F200B3E7C3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AD9AEF5F1688B5F200B3E7C3</string>
+				<string>AD9AEF601688B5F200B3E7C3</string>
+				<string>AD9AEF611688B5F200B3E7C3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>AD9AEFAC1688B9F300B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MGTouchResponderExample</string>
+			<key>productName</key>
+			<string>MGTouchResponderExample</string>
+			<key>productReference</key>
+			<string>AD9AEF631688B5F200B3E7C3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>AD9AEF631688B5F200B3E7C3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MGTouchResponderExample.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD9AEF651688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF481688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF661688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF371688B5C200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF671688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>AD9AEF681688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF671688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF691688B5F200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF7E1688B5F200B3E7C3</string>
+				<string>AD9AEF6A1688B5F200B3E7C3</string>
+				<string>BF8D9BA3ABB0F3EE9DAFC3B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MGTouchResponderExample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF6A1688B5F200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF6B1688B5F200B3E7C3</string>
+				<string>AD9AEF6C1688B5F200B3E7C3</string>
+				<string>AD9AEF6F1688B5F200B3E7C3</string>
+				<string>AD9AEF711688B5F200B3E7C3</string>
+				<string>AD9AEF751688B5F200B3E7C3</string>
+				<string>AD9AEF771688B5F200B3E7C3</string>
+				<string>AD9AEF791688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF6B1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>MGTouchResponderExample-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF6C1688B5F200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF6D1688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF6D1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF6E1688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF6C1688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF6F1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF701688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF6F1688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF711688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MGTouchResponderExample-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF721688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF731688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF741688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF731688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF751688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF761688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF751688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF771688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF781688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF771688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF791688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF7A1688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF791688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF7B1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF7C1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF7D1688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF7C1688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF7E1688B5F200B3E7C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF7F1688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>ViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF7F1688B5F200B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/ViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD9AEF801688B5F200B3E7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD9AEF7E1688B5F200B3E7C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD9AEF811688B5F200B3E7C3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD9AEF821688B5F200B3E7C3</string>
+				<string>AD9AEF831688B5F200B3E7C3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD9AEF821688B5F200B3E7C3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponderExample/MGTouchResponderExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MGTouchResponderExample/MGTouchResponderExample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD9AEF831688B5F200B3E7C3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MGTouchResponderExample/MGTouchResponderExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MGTouchResponderExample/MGTouchResponderExample-Info.plist</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD9AEFAB1688B9F300B3E7C3</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>AD9AEF2B1688B5C100B3E7C3</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>AD9AEF331688B5C100B3E7C3</string>
+			<key>remoteInfo</key>
+			<string>MGTouchResponder</string>
+		</dict>
+		<key>AD9AEFAC1688B9F300B3E7C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>AD9AEF331688B5C100B3E7C3</string>
+			<key>targetProxy</key>
+			<string>AD9AEFAB1688B9F300B3E7C3</string>
+		</dict>
+		<key>B22F5D8FE85C4AD8B50889E4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>BF8D90EFF5E29C7F12975E82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF8D911F11AC3DCFE84C2E66</string>
+				<string>BF8D971595A6DCEC960C3A43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Fixtures</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D911F11AC3DCFE84C2E66</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TouchResponderGroupFixtures.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9255E54F567331E9F1A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D971595A6DCEC960C3A43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF8D9524C92B8A1B0F4C606E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MGTouchResponderGroup.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D966307279254DFAF6061</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MGTouchResponder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D96E13002D592FE713AFC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D9A89C01CB5FB8637FE88</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF8D971595A6DCEC960C3A43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TouchResponderGroupFixtures.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9742D45395C7417CC20C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D983CC7353311B885B6D5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF8D97A678E112938EF0C623</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF8D9A89C01CB5FB8637FE88</string>
+				<string>BF8D90EFF5E29C7F12975E82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D983CC7353311B885B6D5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MGTouchResponderGroup.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9A89C01CB5FB8637FE88</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MGTouchResponderGroupSpec.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9BA3ABB0F3EE9DAFC3B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD9AEF721688B5F200B3E7C3</string>
+				<string>AD9AEF731688B5F200B3E7C3</string>
+				<string>AD9AEF7B1688B5F200B3E7C3</string>
+				<string>AD9AEF7C1688B5F200B3E7C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9C014CFC4A6E51AA254A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF8D9524C92B8A1B0F4C606E</string>
+				<string>BF8D983CC7353311B885B6D5</string>
+				<string>BF8D966307279254DFAF6061</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF8D9DF708CDFDD4E91090A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D966307279254DFAF6061</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF8D9F12F42B893249CAE227</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF8D9524C92B8A1B0F4C606E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEAB8DFF0D84AEC9F9967E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-MGTouchResponderTests-resources.sh"
+</string>
+		</dict>
+		<key>F46AB264D53549AB98762A56</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>AD9AEF2B1688B5C100B3E7C3</string>
+</dict>
+</plist>
