@@ -22,11 +22,11 @@
 
 #import "CCTouchDelegateProtocol.h"
 
-@protocol TouchResponderCallback;
+@protocol MGTouchResponderCallback;
 
 @protocol MGTouchResponder
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback;
+- (void)setTouchResponderCallback:(id <MGTouchResponderCallback>)callback;
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event;
 

@@ -28,7 +28,7 @@ static NSUInteger CALL_COUNT = 0;
 {
 @private
 	NSUInteger _callIndex;
-	id <TouchResponderCallback> _touchResponderCallback;
+	id <MGTouchResponderCallback> _touchResponderCallback;
 }
 
 @property (nonatomic, assign) NSUInteger callIndex;
@@ -38,7 +38,7 @@ static NSUInteger CALL_COUNT = 0;
 @interface ResponderIgnoreOnBegin : NSObject <MGTouchResponder>
 {
 @private
-	id <TouchResponderCallback> _touchResponderCallback;
+	id <MGTouchResponderCallback> _touchResponderCallback;
 }
 @end
 
@@ -49,7 +49,7 @@ static NSUInteger CALL_COUNT = 0;
 @interface ResponderSetDataAndIgnore : NSObject <MGTouchResponder>
 {
 @private
-	id <TouchResponderCallback> _touchResponderCallback;
+	id <MGTouchResponderCallback> _touchResponderCallback;
 }
 
 @end

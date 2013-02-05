@@ -28,7 +28,7 @@
 @synthesize callIndex = _callIndex;
 
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+- (void)setTouchResponderCallback:(id <MGTouchResponderCallback>)callback
 {
 	_touchResponderCallback = callback;
 }
@@ -47,7 +47,7 @@
 
 @implementation ResponderIgnoreOnBegin
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+- (void)setTouchResponderCallback:(id <MGTouchResponderCallback>)callback
 {
 	_touchResponderCallback = callback;
 }
@@ -66,7 +66,7 @@
 
 @implementation ResponderMinimal
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+- (void)setTouchResponderCallback:(id <MGTouchResponderCallback>)callback
 {
 }
 
@@ -78,7 +78,7 @@
 
 @implementation ResponderSetDataAndIgnore
 
-- (void)setTouchResponderCallback:(id <TouchResponderCallback>)callback
+- (void)setTouchResponderCallback:(id <MGTouchResponderCallback>)callback
 {
 	_touchResponderCallback = callback;
 }

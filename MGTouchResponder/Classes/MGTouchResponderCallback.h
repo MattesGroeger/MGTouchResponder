@@ -20,54 +20,26 @@
  * THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-#import "CCTouchDelegateProtocol.h"
-#include "MGTouchResponderCallback.h"
-
 @protocol MGTouchResponder;
 
-@interface TouchData : NSObject
-{
-@private
-	UITouch *_touch;
-	UIEvent *_event;
-}
-@property(nonatomic, strong) UITouch *touch;
-@property(nonatomic, strong) UIEvent *event;
+@protocol MGTouchResponderCallback
 
-- (id)initWithTouch:(UITouch *)touch andEvent:(UIEvent *)event;
-
-@end
-
-@interface PrioritizedTouchResponder : NSObject
-{
-	id <MGTouchResponder> _touchResponder;
-	NSUInteger _priority;
-}
-
-@property (nonatomic, strong) id <MGTouchResponder> touchResponder;
-@property (nonatomic, assign) NSUInteger priority;
-
-- (id)initWithTouchResponder:(id <MGTouchResponder>)touchResponder priority:(NSUInteger)priority;
-
-@end
-
-@protocol MGTouchResponder;
-
-@interface MGTouchResponderGroup : NSObject <CCTargetedTouchDelegate, MGTouchResponderCallback>
-{
-@private
-	NSMutableArray *_responders;
-	NSUInteger _currentResponderIndex;
-	NSMutableArray *_currentTouches;
-}
-
+/**
+* Store any data you want to pass from one responder to the next one in this
+* dictionary. It will be cleared for the next touch interaction.
+*/
 @property (nonatomic, strong, readonly) NSMutableDictionary *userInfo;
 
-- (id)initWithPriority:(int)priority;
+/**
+* Call this if the responder doesn't care about the touches. All touches will
+* be delegated and replayed on the next TouchResponder.
+*/
+- (void)touchIgnored:(id <MGTouchResponder>)originator;
 
-- (void)addResponder:(id <MGTouchResponder>)responder withPriority:(NSUInteger)priority;
-
-- (void)removeResponder:(id <MGTouchResponder>)responder;
+/**
+* Call this if the responder used/consumed the touches. Further delegation is
+* not necessary. All following responders will never know about the touches.
+*/
+- (void)touchConsumed:(id <MGTouchResponder>)originator;
 
 @end

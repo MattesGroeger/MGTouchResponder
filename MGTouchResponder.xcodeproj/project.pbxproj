@@ -30,6 +30,7 @@
 		BF8D9255E54F567331E9F1A7 /* TouchResponderGroupFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D971595A6DCEC960C3A43 /* TouchResponderGroupFixtures.m */; };
 		BF8D96E13002D592FE713AFC /* MGTouchResponderGroupSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D9A89C01CB5FB8637FE88 /* MGTouchResponderGroupSpec.m */; };
 		BF8D9742D45395C7417CC20C /* MGTouchResponderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */; };
+		BF8D9993FAA912D21608F906 /* MGTouchResponderCallback.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D9991B7F5AE65B5AF9CF1 /* MGTouchResponderCallback.h */; };
 		BF8D9DF708CDFDD4E91090A0 /* MGTouchResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D966307279254DFAF6061 /* MGTouchResponder.h */; };
 		BF8D9F12F42B893249CAE227 /* MGTouchResponderGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 			files = (
 				BF8D9F12F42B893249CAE227 /* MGTouchResponderGroup.h in CopyFiles */,
 				BF8D9DF708CDFDD4E91090A0 /* MGTouchResponder.h in CopyFiles */,
+				BF8D9993FAA912D21608F906 /* MGTouchResponderCallback.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,7 @@
 		BF8D966307279254DFAF6061 /* MGTouchResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTouchResponder.h; sourceTree = "<group>"; };
 		BF8D971595A6DCEC960C3A43 /* TouchResponderGroupFixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchResponderGroupFixtures.m; sourceTree = "<group>"; };
 		BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTouchResponderGroup.m; sourceTree = "<group>"; };
+		BF8D9991B7F5AE65B5AF9CF1 /* MGTouchResponderCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTouchResponderCallback.h; sourceTree = "<group>"; };
 		BF8D9A89C01CB5FB8637FE88 /* MGTouchResponderGroupSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTouchResponderGroupSpec.m; sourceTree = "<group>"; };
 		F46AB264D53549AB98762A56 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -258,6 +261,7 @@
 				BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */,
 				BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */,
 				BF8D966307279254DFAF6061 /* MGTouchResponder.h */,
+				BF8D9991B7F5AE65B5AF9CF1 /* MGTouchResponderCallback.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
