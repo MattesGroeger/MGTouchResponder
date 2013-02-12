@@ -188,10 +188,10 @@
 	{
 		[self finishAllTouches];
 	}
-    else
-    {
-	    _currentResponderIndex += 1;
-    }
+	else
+	{
+		_currentResponderIndex += 1;
+	}
 
 	if ([self hasActiveTouches])
 	{

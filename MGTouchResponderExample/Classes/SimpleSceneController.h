@@ -16,10 +16,11 @@
 
 @interface SimpleSceneController : NSObject
 
-@property (nonatomic, strong) CCScene *scene;
-@property (nonatomic, strong, readonly) MGTouchResponderGroup *touchResponderGroup;
+@property(nonatomic, strong) CCScene *scene;
+@property(nonatomic, strong, readonly) MGTouchResponderGroup *touchResponderGroup;
 
-- (id) initWithTouchPriority:(NSInteger) touchPriority;
-- (void) update:(ccTime) delta;
+- (id)initWithTouchPriority:(NSInteger)touchPriority;
+
+- (void)update:(NSNotification *)delta;
 
 @end

@@ -12,11 +12,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CCDirectorDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property(strong, nonatomic) UIWindow *window;
 
-@property (weak, nonatomic, readonly) CCDirectorIOS *director;
-@property (nonatomic) UINavigationController *navController;
+@property(weak, nonatomic, readonly) CCDirectorIOS *director;
+@property(nonatomic) UINavigationController *navController;
 
-@property (nonatomic) BOOL useRetinaDisplay;
+@property(nonatomic) BOOL useRetinaDisplay;
 
 @end
