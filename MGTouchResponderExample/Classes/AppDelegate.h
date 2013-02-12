@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "cocos2d.h"
 
-@class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CCDirectorDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (weak, nonatomic, readonly) CCDirectorIOS *director;
+@property (nonatomic) UINavigationController *navController;
+
+@property (nonatomic) BOOL useRetinaDisplay;
 
 @end

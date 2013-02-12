@@ -7,46 +7,97 @@
 //
 
 #import "AppDelegate.h"
+#import "SimpleSceneController.h"
 
-#import "ViewController.h"
+@interface AppDelegate ()
+
+@property (nonatomic, strong) SimpleSceneController *sceneController;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+    [self.window setMultipleTouchEnabled:YES];
+
+    [self initCocos];
+
+    self.sceneController = [[SimpleSceneController alloc] initWithTouchPriority:INT8_MAX];
+
+    [[CCDirector sharedDirector] runWithScene:self.sceneController.scene];
+
+    // Navigation Controller
+    _navController = [[UINavigationController alloc] initWithRootViewController:_director];
+    _navController.navigationBarHidden = YES;
+
+	[_window setRootViewController:_navController];
+
+    [_window makeKeyAndVisible];
+
     return YES;
+
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+- (void) initCocos {
+
+    _director = (CCDirectorIOS*)[CCDirector sharedDirector];
+    [_director setDisplayStats:NO];
+    [_director setAnimationInterval:1.0/60];
+
+    // GL View
+    CCGLView *__glView = [CCGLView viewWithFrame:[_window bounds]
+                                     pixelFormat:kEAGLColorFormatRGB565
+                                     depthFormat:0 /* GL_DEPTH_COMPONENT24_OES */
+                              preserveBackbuffer:NO
+                                      sharegroup:nil
+                                   multiSampling:NO
+                                 numberOfSamples:0
+    ];
+
+    [__glView setMultipleTouchEnabled:YES];
+
+    [_director setView:__glView];
+    [_director setDelegate:self];
+    _director.wantsFullScreenLayout = YES;
+
+    // Retina Display ?
+    [_director enableRetinaDisplay:_useRetinaDisplay];
+
+}
+
+// getting a call, pause the game
+-(void) applicationWillResignActive:(UIApplication *)application
 {
-	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-	// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    if( [_navController visibleViewController] == _director )
+        [_director pause];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+// call got rejected
+-(void) applicationDidBecomeActive:(UIApplication *)application
 {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    if( [_navController visibleViewController] == _director )
+        [_director resume];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+-(void) applicationDidEnterBackground:(UIApplication*)application
 {
-	// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    if( [_navController visibleViewController] == _director )
+        [_director stopAnimation];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+-(void) applicationWillEnterForeground:(UIApplication*)application
 {
-	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if( [_navController visibleViewController] == _director )
+        [_director startAnimation];
 }
 
+// application will be killed
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
+    CC_DIRECTOR_END();
 }
 
 @end
