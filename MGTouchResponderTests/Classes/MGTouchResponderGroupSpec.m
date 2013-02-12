@@ -23,7 +23,6 @@
 #import "Kiwi.h"
 #import "MGTouchResponder.h"
 #import "TouchResponderGroupFixtures.h"
-#import "KWHaveMatcher.h"
 
 SPEC_BEGIN(MGTouchResponderGroupSpec)
 

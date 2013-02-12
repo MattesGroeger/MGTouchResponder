@@ -147,6 +147,7 @@
 			[currentResponder touchEnded:touch withEvent:event];
 		}
 
+		NSUInteger currentResponderIndex = _currentResponderIndex;
 		id <MGTouchResponder> newResponder = [self currentResponder];
 
 		while (newResponder != nil && newResponder != currentResponder)
@@ -157,7 +158,16 @@
 			}
 
 			currentResponder = newResponder;
-			newResponder = [self currentResponder];
+
+			// BUGFIX for issue #5 where the reset of the _currentResponderIndex lead to this
+			// logic to run in an endless loop as it started with the first responder again.
+			// Now we check if the _currentResponderIndex increased, because this means it was
+			// not reset while calling `touchIgnored` from the current responder.
+			if (_currentResponderIndex > currentResponderIndex)
+			{
+				newResponder = [self currentResponder];
+				currentResponderIndex = _currentResponderIndex;
+			}
 		}
 
 		[self finishTouch:touch];
