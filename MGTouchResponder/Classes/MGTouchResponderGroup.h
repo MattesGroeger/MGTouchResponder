@@ -64,7 +64,7 @@
 
 @property (nonatomic, strong, readonly) NSMutableDictionary *userInfo;
 
-- (id)initWithPriority:(int)priority;
+- (id)init;
 
 - (void)addResponder:(id <MGTouchResponder>)responder withPriority:(NSUInteger)priority;
 

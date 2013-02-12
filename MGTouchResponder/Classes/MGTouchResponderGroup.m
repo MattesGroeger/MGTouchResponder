@@ -22,8 +22,6 @@
 
 #import "MGTouchResponder.h"
 #import "MGTouchResponderGroup.h"
-#import "CCDirectorIOS.h"
-#import "CCTouchDispatcher.h"
 
 @implementation TouchData
 
@@ -65,16 +63,12 @@
 
 @implementation MGTouchResponderGroup
 
-- (id)initWithPriority:(int)priority
+- (id)init
 {
 	self = [super init];
 
 	if (self)
 	{
-		[[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self
-																  priority:priority
-														   swallowsTouches:YES];
-
 		_responders = [NSMutableArray array];
 		_currentResponderIndex = 0;
 		_currentTouches = [NSMutableArray array];
@@ -82,11 +76,6 @@
 	}
 
 	return self;
-}
-
-- (id)init
-{
-	return [self initWithPriority:0];
 }
 
 - (void)addResponder:(id <MGTouchResponder>)responder withPriority:(NSUInteger)priority
@@ -199,8 +188,10 @@
 	{
 		[self finishAllTouches];
 	}
-
-	_currentResponderIndex += 1;
+    else
+    {
+	    _currentResponderIndex += 1;
+    }
 
 	if ([self hasActiveTouches])
 	{
