@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F0838AD7107D3749F0C91BD /* SimpleSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F083B9BFA89AF19CAE92E95 /* SimpleSceneController.m */; };
 		5F083A3EB367F652CDEB14DE /* GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F083B9AE4BE0FCC114F8FDA /* GestureRecognizer.m */; };
+		8C6AA2E684EF439C95FECC63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B736931CEA4B5F9BB6193F /* libPods.a */; };
 		AD62A73C1689B3810015C0A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */; };
 		AD62A76D1689ED9E0015C0A5 /* MGTouchResponderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D983CC7353311B885B6D5 /* MGTouchResponderGroup.m */; };
 		AD9AEF381688B5C200B3E7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF371688B5C200B3E7C3 /* Foundation.framework */; };
@@ -31,7 +32,6 @@
 		BF8D9DF708CDFDD4E91090A0 /* MGTouchResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D966307279254DFAF6061 /* MGTouchResponder.h */; };
 		BF8D9F12F42B893249CAE227 /* MGTouchResponderGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF8D9524C92B8A1B0F4C606E /* MGTouchResponderGroup.h */; };
 		DB17067916CA7E0C006C4596 /* libMGTouchResponder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9AEF341688B5C200B3E7C3 /* libMGTouchResponder.a */; };
-		DBED676416CA6D9000A5D60F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBED676316CA6D9000A5D60F /* libPods.a */; };
 		DBED676616CA6DB300A5D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBED676516CA6DB300A5D60F /* UIKit.framework */; };
 		DBED676916CA6E0C00A5D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBED676516CA6DB300A5D60F /* UIKit.framework */; };
 		DBED676B16CA6E1F00A5D60F /* libPods-MGTouchResponderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBED676A16CA6E1F00A5D60F /* libPods-MGTouchResponderTests.a */; };
@@ -64,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		09A5895086254506A3D7301A /* Pods-MGTouchResponderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGTouchResponderTests.xcconfig"; path = "Pods/Pods-MGTouchResponderTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		16525447B40B4C12BF60D933 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		47B736931CEA4B5F9BB6193F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F08372B7177D23A5573F318 /* SimpleSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSceneController.h; sourceTree = "<group>"; };
 		5F083756E849F4E55E262BCC /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
 		5F083B9AE4BE0FCC114F8FDA /* GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizer.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9AEF381688B5C200B3E7C3 /* Foundation.framework in Frameworks */,
+				8C6AA2E684EF439C95FECC63 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +130,6 @@
 			files = (
 				DB17067916CA7E0C006C4596 /* libMGTouchResponder.a in Frameworks */,
 				DBED676616CA6DB300A5D60F /* UIKit.framework in Frameworks */,
-				DBED676416CA6D9000A5D60F /* libPods.a in Frameworks */,
 				AD9AEF661688B5F200B3E7C3 /* Foundation.framework in Frameworks */,
 				AD9AEF681688B5F200B3E7C3 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -146,6 +148,7 @@
 				AD9AEF351688B5C200B3E7C3 /* Products */,
 				942112858C1B403B86C8E48A /* Pods.xcconfig */,
 				09A5895086254506A3D7301A /* Pods-MGTouchResponderTests.xcconfig */,
+				16525447B40B4C12BF60D933 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +171,7 @@
 				AD9AEF371688B5C200B3E7C3 /* Foundation.framework */,
 				AD9AEF461688B5C200B3E7C3 /* SenTestingKit.framework */,
 				AD9AEF671688B5F200B3E7C3 /* CoreGraphics.framework */,
+				47B736931CEA4B5F9BB6193F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -284,6 +288,7 @@
 				AD9AEF311688B5C100B3E7C3 /* Frameworks */,
 				AD9AEF321688B5C100B3E7C3 /* CopyFiles */,
 				B22F5D8FE85C4AD8B50889E4 /* Copy Pods Resources */,
+				7ECCBD74AC0D4D55AAF068B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,6 +389,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7ECCBD74AC0D4D55AAF068B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		968BDBD3475744ABA0BE0B9A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,7 +577,7 @@
 		};
 		AD9AEF5A1688B5C200B3E7C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 942112858C1B403B86C8E48A /* Pods.xcconfig */;
+			baseConfigurationReference = 16525447B40B4C12BF60D933 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/MGTouchResponder.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -571,7 +590,7 @@
 		};
 		AD9AEF5B1688B5C200B3E7C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 942112858C1B403B86C8E48A /* Pods.xcconfig */;
+			baseConfigurationReference = 16525447B40B4C12BF60D933 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/MGTouchResponder.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
