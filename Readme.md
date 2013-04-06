@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MattesGroeger/MGTouchResponder.png?branch=master)](https://travis-ci.org/MattesGroeger/MGTouchResponder)
+
 Introduction
 ============
 
