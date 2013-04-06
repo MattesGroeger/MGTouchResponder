@@ -563,9 +563,11 @@
 				DSTROOT = /tmp/MGTouchResponder.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TEST_AFTER_BUILD = NO;
 			};
 			name = Debug;
 		};
@@ -579,6 +581,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TEST_AFTER_BUILD = NO;
 			};
 			name = Release;
 		};
@@ -593,7 +596,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
 				INFOPLIST_FILE = "MGTouchResponderTests/MGTouchResponderTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -610,6 +615,7 @@
 				GCC_PREFIX_HEADER = "MGTouchResponder/MGTouchResponder-Prefix.pch";
 				INFOPLIST_FILE = "MGTouchResponderTests/MGTouchResponderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -626,6 +632,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGTouchResponderExample/MGTouchResponderExample-Prefix.pch";
 				INFOPLIST_FILE = "MGTouchResponderExample/MGTouchResponderExample-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
